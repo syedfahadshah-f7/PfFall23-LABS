@@ -9,6 +9,7 @@
 ![Q4](https://github.com/syedfahadshah-f7/PfFall23-lab1/assets/142867460/2740ee8c-4d41-40d5-a150-d29740a4bba0)
 ![Q5](https://github.com/syedfahadshah-f7/PfFall23-lab1/assets/142867460/893182ba-9b70-4278-9273-b600124c8bf0)
 ![Q6](https://github.com/syedfahadshah-f7/PfFall23-lab1/assets/142867460/251770a9-0ba5-4527-95f2-e242bade832f)
+![Q7](https://github.com/syedfahadshah-f7/PfFall23-lab1/assets/142867460/df857e1f-5154-47a7-aafb-13d657b6976e)
 
 
 
