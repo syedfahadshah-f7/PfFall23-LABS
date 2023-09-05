@@ -1,15 +1,18 @@
 #include<stdio.h>
 int main(){
+	int discountprice;
 	int saleprice;
-	int a;
+	int originalprice;
 	printf("Enter Original price:");
-	scanf("%d", &a);
+	scanf("%d", &originalprice);
 
-	int b;
+	int discount;
 	printf("Enter discount:");
-	scanf("%d", &b);
+	scanf("%d", &discount);
 	
-	float saleprice; (a/10)*(b/10); 
-	printf("%.2f", saleprice);
+	 discountprice = (originalprice/10)*(discount/10) ;
+	
+    saleprice = originalprice - discountprice ;
+	printf("Sale Price %d", saleprice);
 
 }
