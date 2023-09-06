@@ -11,9 +11,9 @@ int main(){
     scanf("%d", &num2);
     char func;
     printf("Enter Function:");
-    scanf("%c", &func);
+    scanf("%s", &func);
 
-    if (func =="+"){
+    if (func =='+'){
         printf("Add = %d", num1+num2);
     }
     else if(func =='-'){
