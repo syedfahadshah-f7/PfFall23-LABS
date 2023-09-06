@@ -11,7 +11,7 @@ int main(){
     scanf("%d", &num2);
     char func;
     printf("Enter Function:");
-    scanf("%s", &func);
+    scanf(" %c", &func);
 
     if (func =='+'){
         printf("Add = %d", num1+num2);
@@ -22,7 +22,7 @@ int main(){
     else if (func =='*'){
         printf("Multiply = %d", num1*num2);
     }
-    else  (func == '/') {
+    else if (func == '/') {
         printf("divide = %d", num1/num2);
     }
     return 1;
