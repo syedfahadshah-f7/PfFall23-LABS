@@ -1,4 +1,7 @@
-
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:9-12-2023
+ *Description:This is a program for quadratic formula.
+ */
 #include <stdio.h>
 #include <math.h>
 
@@ -12,13 +15,13 @@ int main() {
     	scanf("%lf", &c);
 
 	if(a==0){
-	printf("value bill infinty");
+	printf("value will infinty"); //function is undefined
 	return 1;
 }
     
     double x,y,z;// holding value
-    double radical;
-    double numerator;// holding square of function 
+    double radical; // holding square root part
+    double numerator;// holding upper function 
     double ansone;
     double anstwo;
     
@@ -29,7 +32,7 @@ int main() {
 	if(z<0){
 	printf("Roots are complex");
 	return 1;
-}
+}//This is the condition where roots are complex
 
    radical = sqrt(z);
 
