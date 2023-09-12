@@ -15,7 +15,7 @@ int main() {
     	scanf("%lf", &c);
 
 	if(a==0){
-	printf("value will infinty"); //function is undefined
+	printf("root is infinty"); //function is undefined
 	return 1;
 }
     
