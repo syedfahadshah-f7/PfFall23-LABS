@@ -1,4 +1,4 @@
-/*Programmer : Syed Fahad Faheem shah
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
  *Date:9-12-2023
  *Description:This is a program for printing stars acccording to user input.
  */
