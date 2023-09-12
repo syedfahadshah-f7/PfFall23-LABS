@@ -2,28 +2,31 @@
  *Date:9-12-2023
  *Description:This is a program for print sum of the squares of integers.
 */
-#include<stdio.h>
 
-int main(){
-	int num1;
-	printf("Enter your number");
-	scanf("%d", num);
+#include <stdio.h>
 
-	int squr;
-	int final;
-	int a= 0;
-	int i = 0;
-	for(i<=num1){
-	int i= i++;
-	int x;
-	printf("Enter your numbers")
-	scanf("%d", &x);
-
-	squr= x * x ;
-	a= squr +a ;
-	printf("%d", a);
+int main() {
+  int num;
+  printf("Enter your Number:");
+  scanf("%d", &num);
+  
+  int i; // counter variable for loop
+  int squr;
+  int sum = 0;
+  int j; // this variable store squares of numbers
+  
+  while(i < num){
+      
+      printf("Enter Number=");
+      scanf("%d", &squr);
+      
+      j= squr * squr;
+      sum = sum + j;
+      i = i + 1;
+      
+  }//end loop
 	
-}//end loop
-	
-	return 0;
-}//end main
+    printf("%d", sum);
+    
+    return 0;
+}// end main	
