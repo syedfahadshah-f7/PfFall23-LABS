@@ -10,7 +10,7 @@ int main() {
   printf("Enter your Number:");
   scanf("%d", &num);
   
-  int i; // counter variable for loop
+  int i=0; // counter variable for loop
   int squr;
   int sum = 0;
   int j; // this variable store squares of numbers
