@@ -7,7 +7,7 @@ int main(){
 	char value;
 	printf("Enter character:");
 	scanf("%c", &value);
-	
+	int store = value;
 
 	if (value>32 && value<=47){
 		printf("Input is special character");
