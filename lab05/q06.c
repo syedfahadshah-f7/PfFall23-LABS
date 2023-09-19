@@ -1,3 +1,7 @@
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:9-19-2023
+ *Description:This is a program for check 4th bit and 7th bit is on of off, if on then off it.
+ */
 #include <stdio.h>
 
 int main() {
