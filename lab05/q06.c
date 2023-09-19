@@ -1,22 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void main(){
-	int num, i, j, remone, remtwo;
-	printf("Enter bit number");
-	scanf("%d", &num);
-	
-	remone = num % 1000 ;
-	remtwo = num % 1000000;
-	 if(remone!= 0 && remtwo!= 0){
-	     
-    i = 1000 + remone;
-    j = 1000000 + remtwo;
-	num = num - i -j;
-	num = num + 1000 +1000000;
-    printf(" %d", num);
-    
-}// end eif
-    else if(remone == 0 && remtwo==0){
-        printf(" %d", num);
-    }//else if end
-}
+int main() {
+    // All are bits values from bit1 to bit 8
+    int one, two, three, four, five, six, seven, eight;
+
+    printf("Enter 8 bits number: ");
+    scanf("%d %d %d %d %d %d %d %d", &one, &two, &three, &four, &five, &six, &seven, &eight);
+
+    if (four != 0 && seven != 0) {
+        four = 0;
+        seven = 0;
+        printf("\n%d %d %d %d %d %d %d %d\n", one, two, three, four, five, six, seven, eight);
+    } //end if
+    else {
+        printf("\n%d %d %d %d %d %d %d %d\n", one, two, three, four, five, six, seven, eight);
+    }// end else
+
+    return 0;
+}//end main
