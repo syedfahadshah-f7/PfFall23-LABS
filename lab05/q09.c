@@ -15,7 +15,7 @@ int main(){
     else if(discriminant == 0){
         printf("The Roots are equal and Real");
     }// end  else if
-    if(discriminant < 0){
+    else if(discriminant < 0){
         printf("The Roots are complex and imaginary");
-    }// end if
+    }// end else if
 }//end main
