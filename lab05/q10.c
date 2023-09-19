@@ -1,3 +1,7 @@
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:9-19-2023
+ *Description:This is a program  to exchange higher four bits with the lower four bits .
+ */
 #include<stdio.h>
 void main (){
 	// All are bits values from bit1 to bit 8
