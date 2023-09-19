@@ -1,3 +1,7 @@
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:9-19-2023
+ *Description:This is a program for check user input category small alphabet, capital alphabet, special character, digits.
+ */
 #include<stdio.h>
 int main(){
 	char value;
