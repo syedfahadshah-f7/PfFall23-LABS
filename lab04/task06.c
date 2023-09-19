@@ -1,3 +1,8 @@
+/*programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:9-12-2023
+ *Description:print star inside spacing.
+*/
+
 #include <stdio.h>
 
 int main() {
