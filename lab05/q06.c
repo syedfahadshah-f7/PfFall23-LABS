@@ -1,16 +1,22 @@
 #include<stdio.h>
 
 void main(){
-	int num,check;
-	printf("Enter *bit number");
+	int num, i, j, remone, remtwo;
+	printf("Enter bit number");
 	scanf("%d", &num);
 	
-	 if(check = num / 1000 && num / 1000000;){
-
-	check = check - 1000 -1000000;
- 
-	
-}// end else if
-	printf("%c", check);
-
-}// end main
+	remone = num % 1000 ;
+	remtwo = num % 1000000;
+	 if(remone!= 0 && remtwo!= 0){
+	     
+    i = 1000 + remone;
+    j = 1000000 + remtwo;
+	num = num - i -j;
+	num = num + 1000 +1000000;
+    printf(" %d", num);
+    
+}// end eif
+    else if(remone == 0 && remtwo==0){
+        printf(" %d", num);
+    }//else if end
+}
