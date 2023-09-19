@@ -1,3 +1,7 @@
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:9-19-2023
+ *Description:This is a program to find discriminant and Compute roots based on the nature of discriminant. .
+ */
 #include<stdio.h>
 int main(){
      int a, b ,c, discriminant;
