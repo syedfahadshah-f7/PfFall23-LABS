@@ -5,33 +5,33 @@
 #include <stdio.h>
 void main(){
     
-    int num1;
-    int num2;
+    int numone;
+    int numtwo;
     
     printf("Enter Number 1:\n");
-    scanf("%d", &num1);
+    scanf("%d", &numone);
     
     printf("Enter Number 2:\n");
-    scanf("%d", &num2);
+    scanf("%d", &numtwo);
     char func;
     printf("Enter Function:");
     scanf(" %c", &func);
 
 	switch(func){
     case'+':
-        printf("Add = %d", num1+num2);
+        printf("Add = %d", numone + numtwo);
     	break;
 
     case'-':
-        printf("Sub = %d", num1-num2);
+        printf("Sub = %d", numone - numtwo);
     	break;
 
     case'*':
-        printf("Multiply = %d", num1*num2);
+        printf("Multiply = %d", numone * numtwo);
  	break;
 
     case'/':
-        printf("divide = %d", num1/num2);
+        printf("divide = %d", numone / numtwo);
     	break;
 }// end switch
 }//end main
