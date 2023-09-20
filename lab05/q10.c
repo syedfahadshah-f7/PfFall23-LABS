@@ -9,7 +9,7 @@ int main() {
     printf("Enter 8 bit number:");
     scanf("%d", &num);
     
-    if (num <10){
+    if (num > 10){
     i = num % 10000;
     j= num / 10000;
     
