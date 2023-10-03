@@ -14,6 +14,7 @@ if(fibonachi%3 == 0 || fibonachi%5 == 0 || fibonachi%7 == 0){
 a=b;
 b=fibonachi;
 fibonachi=a+b;
+if(fibonachi>10000){break;}	
 printf("%d,", fibonachi);
 
 
