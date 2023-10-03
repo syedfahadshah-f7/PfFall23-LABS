@@ -1,3 +1,7 @@
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-03-2023
+ *Description: program to read n number of values in an array and display it in reverse orders.
+   */
 #include<stdio.h>
 
 void main(){
