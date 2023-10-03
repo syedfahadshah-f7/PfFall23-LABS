@@ -1,4 +1,7 @@
-
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-03-2023
+ *Description: Printing Pattern
+   */
 #include <stdio.h>
 
 int main() {
