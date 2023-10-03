@@ -1,4 +1,7 @@
-
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-03-2023
+ *Description:checking the Number is perfect or not  .
+ */
 #include<stdio.h>
 void main(){
 int num, sum=0;
