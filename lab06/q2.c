@@ -1,3 +1,7 @@
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-03-2023
+ *Description: Fibonacci series up to 10000 and the sum of the generated Fibonacci numbers divisible by 3, 5 or 7  
+ */
 #include<stdio.h>
 int main(){
 int sum=0,fibonachi=1,a=0,b=0;
