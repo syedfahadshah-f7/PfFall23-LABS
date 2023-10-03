@@ -1,4 +1,7 @@
-
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-03-2023
+ *Description: Program to find the minimum and maximum number in an array..
+   */
 #include<stdio.h>
 
 void main(){
