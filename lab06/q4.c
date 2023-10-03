@@ -1,4 +1,7 @@
-// Online C compiler to run C program online
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-03-2023
+ *Description: Program for printing  from num1 till num2 and printing it in descriptive form
+   */
 #include <stdio.h>
 
 int main() {
