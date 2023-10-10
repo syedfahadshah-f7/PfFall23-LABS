@@ -1,3 +1,7 @@
+/*programmer:Syed Fahad Faheem Shah(23k-0062)
+  Description: Divide two numbers according to user demand
+  date:10/10/2023
+ */
 #include <stdio.h>
 
 int main() {
