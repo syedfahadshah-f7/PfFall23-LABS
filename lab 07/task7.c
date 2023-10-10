@@ -3,37 +3,48 @@
   date:10/10/2023
  */
 #include <stdio.h>
+
 int main() {
     int ar,ac,br,bc;
-    printf("Enter row and column of matrix1 and matrix2:");
-    scanf("%d %d", &ar,&ac,&br,&bc);
-    int arr[100][100],brr[100][100],mul[100][100]={0};
+    printf("Enter row and column of matrix1:");
+    scanf("%d %d", &ar,&ac);
+     printf("Enter row and column of matrix2:");
+    scanf("%d %d", &br,&bc);
+    if(ac == br){
+    int arr[ar][ac], brr[br][bc], ans[ar][bc];
     printf("Enter Values of MAtrix 1\n");
     for (int i=0;i<ar;i++){
         for(int j=0;j<ac;j++){
             scanf("%d", &arr[i][j]);
         }
     }
+    
     printf("Enter Values of MAtrix 2\n");
     for (int i=0;i<br;i++){
         for(int j=0;j<bc;j++){
             scanf("%d", &brr[i][j]);
         }
     }
-    if(ac == br){
-    for(int i=0;i<ar;i++){
+    // end taking inputs loop
+    
+     for (int i=0;i<ar;i++){
         for(int j=0;j<bc;j++){
-           for (int k=0;k<ac;k++){
-               mul[i][j] += arr[j][k] * 2 2 brr[k][j];
-                }
+            for(int k=0;k<ac;k++){
+            ans[i][j] += (arr[i][k] * brr[k][j]);
             }
         }
-    }
-    for (int i=0;i<ar;i++){
+    }// end multiplying loop
+    printf("Multiplied Matrix :\n");
+     for (int i=0;i<ar;i++){
         for(int j=0;j<bc;j++){
-            printf("%d\t", mul[i][j]);
+        printf("%d\t", ans[i][j]);
+            
         }
         printf("\n");
+     }
+    }// end if
+    else{
+        printf("Invalid Multiplication of Matrix");
     }
     return 0;
 }
