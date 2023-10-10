@@ -1,5 +1,5 @@
 /*programmer:Syed Fahad Faheem Shah(23k-0062)
-  Description: checiking Matrix is Symmetric or not
+  Description: Multpliacation of two matrix
   date:10/10/2023
  */
 #include <stdio.h>
