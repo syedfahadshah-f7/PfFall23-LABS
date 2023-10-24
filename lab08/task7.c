@@ -1,3 +1,7 @@
+/* Programmer: Syed Fahad Faheem Shah(23k-0062)
+   description: Calculate discount by last month coming records and purchase .
+   Date: 24/10/2023
+*/ 
 #include<stdio.h>
 int calculatediscount(int x, int y){
 	int discount;
