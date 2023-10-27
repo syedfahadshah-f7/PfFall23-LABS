@@ -1,4 +1,9 @@
-
+/*programmer:Syed Fahad Faheem Shah(23k-0062)
+  Description: taking nxn grid from user.Generate a matrix “maxLocal” of size (n - 2) x (n - 2) 
+  finding the largest value in every contiguous 3x3 matrix in the grid.
+  Return the generated matrix.
+  date:10/10/2023
+ */
 #include <stdio.h>
 
 void main() {
