@@ -2,19 +2,20 @@
 #include <stdio.h>
 int checking(int n,int a,int b,int fib){
    
-      if(fib<n){
+      if(n>0){
       a=b;
       b=fib;
       printf("%d,", fib=a+b);
-      checking(n,a,b,fib);
+      checking(n-1,a,b,fib);
+ 
       } else {return 0; }
 }
 int main() {
 int n;
-printf("Enter Range of Fibonacci series");
+printf("How many numbers you want to print from Fibonacci series:");
 scanf("%d", &n);
 int a=0,b=0,fib=1;
-printf("%d", fib);
+printf("%d,", fib);
 checking(n,a,b,fib);
 
     return 0;
