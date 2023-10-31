@@ -5,13 +5,13 @@
 #include <stdio.h>
 int GCD(int num1,int num2,int n){
  
-    if(n>1){
+    if(n>1)
         if(num1%n==0 && num2%n==0){
                 printf("GCD by using Recursion:%d", n);
                 return 0; }
         GCD(num1,num2,n-1);
-    }    
-    else{return 0;}
+        
+    
 }
 int main() {
     
