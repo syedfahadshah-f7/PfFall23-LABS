@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+int multiply(int a, int b,int ans){
+    if(b ==0)return  ans;
+      ans += a;
+       b--;
+     multiply(a,b,ans);
+}
+int main() {
+   int a,b,ans=0;
+   printf("Enter Number1:");
+   scanf("%d", &a);
+    printf("Enter Number2:");
+   scanf("%d", &b);
+
+    int mul =multiply(a,b,ans);
+    printf("Ans=%d", mul);
+    return 0;
+}
