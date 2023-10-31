@@ -1,4 +1,7 @@
-
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-31-2023
+ *Description:print forward array and then print same array at reverse order by pointers.
+ */
 #include <stdio.h>
 void reverse(int *arr, int size){
     arr[size];
