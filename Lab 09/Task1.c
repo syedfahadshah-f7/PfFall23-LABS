@@ -1,5 +1,5 @@
 /*Programmer : Syed Fahad Faheem shah (23k-0062)
- *Date:10-03-2023
+ *Date:10-31-2023
  *Description:Swapping by pointers.
  */
 #include <stdio.h>
