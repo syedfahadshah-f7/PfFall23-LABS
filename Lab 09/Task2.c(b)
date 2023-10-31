@@ -3,8 +3,7 @@
 int multiply(int a, int b,int ans){
     if(b ==0)return  ans;
       ans += a;
-       b--;
-     multiply(a,b,ans);
+     multiply(a,b-1,ans);
 }
 int main() {
    int a,b,ans=0;
