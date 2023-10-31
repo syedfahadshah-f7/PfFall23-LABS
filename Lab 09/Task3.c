@@ -1,14 +1,28 @@
-// Online C compiler to run C program online
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-31-2023
+ *Description:Taking 3 arrays from user  of type char, int, long long int Print the addresses and values stored in all these 
+ arrays one by one using pointer arithmetic.
+ */
 #include <stdio.h>
 
 int main() {
     int n;
     printf("Enter Size :");
     scanf("%d", &n);
-    
-    char crr[10]={'a','b','c','d','e','f','g','h','i','j','\0'};
-    int brr[10]={0,1,2,3,4,5,6,7,8,9};
-    long long int arr[10]={10,9,8,7,6,5,4,3,2,1};
+    char crr[n]={'\0'};
+    int brr[n]={0};
+    long long int arr[n]={0};
+
+    printf("Enter Values of Char Array");
+    for(int i;i<n;i++){
+        scanf("%c", &crr[i]);}
+    printf("Enter Values of Int Array");
+    for(int i;i<n;i++){
+        scanf("%d", &arr[i]);}
+    printf("Enter Values of long long Int Array");
+    for(int i;i<n;i++){
+        scanf("%d", &arr[i]);}
+   
     
     int *b=brr;
     char *c=crr;
