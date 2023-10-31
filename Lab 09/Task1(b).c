@@ -1,4 +1,7 @@
-
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-31-2023
+ *Description:Finding Factorial through Recursion.
+ */
 #include <stdio.h>
 void factorial(int n,int ans){
    
