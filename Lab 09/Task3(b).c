@@ -1,4 +1,7 @@
-// Online C compiler to run C program online
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-31-2023
+ *Description:Finding Greatest Common Devisor through Loops and recursion.
+ */
 #include <stdio.h>
 int GCD(int num1,int num2,int n){
  
