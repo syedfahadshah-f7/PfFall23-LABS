@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int checking(int n,int a,int b,int fib){
+   
+      if(fib<n){
+      a=b;
+      b=fib;
+      printf("%d,", fib=a+b);
+      checking(n,a,b,fib);
+      } else {return 0; }
+}
+int main() {
+int n;
+printf("Enter Range of Fibonacci series");
+scanf("%d", &n);
+int a=0,b=0,fib=1;
+printf("%d", fib);
+checking(n,a,b,fib);
+
+    return 0;
+}
