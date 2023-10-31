@@ -1,4 +1,7 @@
-
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-31-2023
+ *Description:Multiply Two numbers through addition using Recursion.
+ */
 #include <stdio.h>
 int multiply(int a, int b,int ans){
     if(b ==0)return  ans;
