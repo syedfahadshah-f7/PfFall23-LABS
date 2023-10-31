@@ -1,4 +1,7 @@
-// Online C compiler to run C program online
+/*Programmer : Syed Fahad Faheem shah (23k-0062)
+ *Date:10-31-2023
+ *Description:Finding Fibonachi series through Recursion.
+ */
 #include <stdio.h>
 int checking(int n,int a,int b,int fib){
    
