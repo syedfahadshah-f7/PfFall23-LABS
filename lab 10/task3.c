@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 //to check if the number is prime or not
-bool isPrime(int num){
+bool checkingprime(int num){
 	
 	for(int i = 2; i <= sqrt(num); i++){
 		if(num % i == 0){
@@ -21,12 +21,12 @@ bool isPrime(int num){
 } //end isPrime
 
 //to print all the prime numbers
-void printPrime(int **arr, int rows, int cols){
+void printingprime(int **arr, int rows, int cols){
 	
 	//to fill the 2D array with prime numbers
 	for(int i = 0, num = 2; i < rows; i++){
 		for(int j = 0; j < cols; j++){
-			if(isPrime(num)){
+			if(checkingprime(num)){
 				*(*(arr + i) + j) = num;
 			} else {
 			    j--;
@@ -63,7 +63,7 @@ void main(){
 	}
 	
 	printf("\n");
-	printPrime(arr, rows, cols);
+	printingprime(arr, rows, cols);
 	
 	// freeing allocated space
 	for(int i = 0; i < rows; i++){
