@@ -1,5 +1,5 @@
 /*
-* Programmer: Syed Fahad Faheem Shah
+* Programmer: Syed Fahad Faheem Shah(23k-0062)
 * Date: 11/15/2023
 * Description: Create a program that dynamically allocates memory for a 2D array of integers. Write a function that accepts a pointer to a pointer to an integer and fills the 2D array with consecutive prime numbers.
 */
