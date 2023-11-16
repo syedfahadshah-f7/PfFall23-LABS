@@ -36,12 +36,12 @@ void printingprime(int **arr, int rows, int cols){
 	}
 	
 	//to print the output
-	for(int i = 0; i < rows; i++){
-		for(int j = 0; j < cols; j++){
-			printf("%d ", *(*(arr + i) + j));
-		}
-		printf("\n");
-	}
+	for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++) {
+            printf("%d \t", arr[i][j]);
+        }
+        printf("\n");
+    }
 	
 } //end printPrime
 
@@ -57,17 +57,13 @@ void main(){
 	scanf("%d", &cols);
 	
 	//allocating memory dynamically for a 2D array
-	int **arr = (int**) malloc(rows * sizeof(int));
-	for(int i = 0; i < cols; i++){
-		*(arr + i) = (int*) malloc(cols * sizeof(int));
-	}
-	
-	printf("\n");
+	int** arr= malloc(rows*sizeof(int*));
+    int* brr= malloc(rows*cols*sizeof(int));
+    
+    for(int i=0;i<rows;i++){
+        arr[i] = brr+(i*cols);
+    }
 	printingprime(arr, rows, cols);
 	
-	// freeing allocated space
-	for(int i = 0; i < rows; i++){
-		free(*(arr + i));
-	}
-	free(arr);
+	
 } //end main
