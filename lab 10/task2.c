@@ -1,3 +1,9 @@
+/*
+* Programmer: Syed Fahad Faheem Shah(23k-0062)
+* Date: 11/15/2023
+* Description: swapping twp numbers with Xor
+*/
+
 #include <stdio.h>
 #include <string.h>
 
