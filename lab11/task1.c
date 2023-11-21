@@ -30,18 +30,37 @@ int main(){
 		scanf("%s", faltoo[i].joiningyear);
 	}
 	
-		for(i=0;i<n;i++){
-		printf("ENTER DATA OF STUDENT %d\n", i+1);
-		printf("ROLL NUMBER OF STUDENT %d\n", i+1);
+		/*for(i=0;i<n;i++){
+		printf("ROLL NUMBER OF STUDENT %d", i+1);
 		printf("%s", faltoo[i].rollnumber);
-		printf("NAME OF STUDENT %d\n", i+1);
+		printf("\nNAME OF STUDENT %d", i+1);
 		printf("%s",faltoo[i].name);
-		printf("DEPARTMENT OF STUDENT %d\n", i+1);
+		printf("\nDEPARTMENT OF STUDENT %d", i+1);
 		printf("%s", faltoo[i].department);
-		printf("COURSE OF STUDENT %d\n", i+1);
+		printf("\nCOURSE OF STUDENT %d", i+1);
 		printf("%s", faltoo[i].course);
-		printf("JOINING YEAR OF STUDENT %d\n", i+1);
+		printf("\nJOINING YEAR OF STUDENT %d\n", i+1);
 		printf("%s", faltoo[i].joiningyear);
-	}
+	}*/
 	
+	char pyear[10];
+	printf("Enter A Particular year\n");
+	scanf("%s", pyear);
+	
+	for(int i=0;i<n;i++){
+	    int a=strcmp(faltoo[i].joiningyear,pyear);
+	    if(a==0){ printf("%s joined in this year", faltoo[i].name); }
+	}
+	char proll[10];
+	printf("\nEnter A Particular rollnumber\n");
+	scanf("%s", proll);
+		for(int i=0;i<n;i++){
+	    int b=strcmp(faltoo[i].rollnumber,proll);
+	    if(b==0){
+	        printf("NAME:%s\n", faltoo[i].name); 
+	        printf("Department:%s\n", faltoo[i].department); 
+	        printf("Course:%s\n", faltoo[i].course); 
+	        printf("joining year:%s\n", faltoo[i].joiningyear); 
+	    }
+	}
 }
