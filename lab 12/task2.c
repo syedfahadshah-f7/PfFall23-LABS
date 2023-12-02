@@ -1,9 +1,13 @@
+/* Programmer:Syed Fahad Faheem Shah(23k-0062)
+    Date:12-2-2023
+    Description: Reading and comparing data in binary mode
+*/
 #include<stdio.h>
 #include<stdbool.h>
 
 int main() {
-    FILE *a = fopen("test1.txt", "rb");
-    FILE *b = fopen("test2.txt", "rb");
+    FILE *a = fopen("test1.docs", "rb");
+    FILE *b = fopen("test2.docs", "rb");
 
     if (a == NULL || b == NULL) {
         perror("Error opening files");
