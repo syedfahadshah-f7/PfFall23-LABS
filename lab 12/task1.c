@@ -1,46 +1,42 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+/* Programmer:Syed Fahad Faheem Shah(23k-0062)
+    Date:12-2-2023
+    Description: Reading and printing data from CSV file
+*/
+#include<string.h>
+#include<stdlib.h>
+#include<stdio.h>
+void tokenize(char* arr[30]){
+	char delim[2]= ",";
+	char* temp= strtok(arr,delim);
+	while(temp != NULL){
+		printf("%s\t|", temp);
+		temp = strtok(NULL,delim);		
+	}
+}
 
-#define SIZE 100
+int main(){
+	FILE *ptr=fopen("table.csv", "r");
+	char line[30];
+	int max_cols=1,max_rows=0;
+	
+	 while(fgets(line,sizeof(line),ptr)!= NULL){
+		max_rows++;
+		printf("\n");
+		tokenize(line);
+		
+	}
+	fseek(ptr,0,SEEK_SET);
+	
+	while(1){
+		if(fgetc(ptr) == '\n'){
+			break;
+		}
+		if(fgetc(ptr)==','){
+			max_cols++;
+		}
+	}
+	printf("\n%d max rows\t %d max columns",max_rows,max_cols);
 
-int format_line(char str[100])
-{
-    char delim[2] = ",";
-    int cols = 0;
-    char *col = strtok(str, delim);
-
-    
-    while (col != NULL) {
-        cols++;
-        col[strcspn(col, "\n")] = 0;
-        printf("%-14s | ", col); 
-        col = strtok(NULL, delim);
-    }
-
-    printf("\n");
-    return cols;
-} 
-
-void read_file(FILE *fptr)
-{
-    char buffer[SIZE];
-    int rows = 0, cols = 0;
-
-    
-    while (!feof(fptr)) {
-        rows = format_line(fgets(buffer, SIZE, fptr)); 
-        cols++;
-    }
-
-    printf("\n\nrows: %d, cols: %d", cols, rows);
-} 
-
-int main()
-{
-    FILE *fptr = fopen("table.csv", "r");
-    read_file(fptr);
-    fclose(fptr);
-
-    return 0;
+	fclose(ptr);
+	return 0;
 }
